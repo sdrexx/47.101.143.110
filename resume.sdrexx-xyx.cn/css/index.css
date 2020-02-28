@@ -1,0 +1,102 @@
+.jineng p {
+    margin-top: -0.3rem;
+    margin-bottom: 0rem;
+}
+.clk {
+    margin-bottom: .6rem;
+    text-align: center;
+}
+.md-content a {
+    display: block;
+    text-align: center;
+}
+.tm-portfolio-item {
+    margin-bottom: 0px;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.tm-welcome-icon {
+    margin-bottom: 2rem;
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+.str {
+    font-weight: bold;
+    font-size: 18px;
+}
+.to {
+    text-align: center;
+}
+.to span {
+    color: #98cb00;
+    cursor: pointer;
+}
+.ind {
+    text-indent: 40px;
+}
+.tm-title-small {
+    display: block;
+}
+.tm-welcome-right {
+    padding: 80px 23px 70px;
+}
+.md-trigger {
+    background: none;
+    border: none;
+    outline: none;
+    color: #98cb00;
+}
+.md-overlay {
+    background: black;
+    opacity: .3;
+}
+.md-close {
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 20px;
+}
+@media screen and (max-width: 800px) {
+    
+    .tm-welcome-left{
+        padding-right: 0;
+    }
+    .jineng p {
+        text-indent: 25px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .tm-welcome-left {
+        padding-top: 25px;
+    }
+    .tm-welcome-title {
+        margin-bottom: 20px;
+    }
+}   
+
+@media screen and (max-width: 320px) {
+    .tm-brand-container {
+        padding:1px 5px;
+        margin-top: 10px;
+    }
+    .info {
+       
+        white-space: initial;
+    }
+    .tm-welcome-left {
+        padding-top: 0px;
+    }
+    
+    #tmPortfolio {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .jineng {
+        padding-bottom: 10px;
+    }
+}   
