@@ -122,7 +122,7 @@ export default {
       if (xhr.readyState == 4) {
         if (xhr.status == 200) {
           let msg = JSON.parse(xhr.responseText);
-          that.messageCount = msg;
+          that.messageCount = msg.reverse();
           that.blogMessage = msg[that.$route.params.id];
           if (that.key > 0 && that.key < that.messageCount.length - 1) {
             that.up = true;

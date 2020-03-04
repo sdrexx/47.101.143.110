@@ -138,13 +138,14 @@ export default {
         if (xhr.status == 200) {
           let msg = JSON.parse(xhr.responseText);
           that.messageCount = msg.reverse();
-          for (let i = 0; i < that.messageCount.length; i++) {
+          for (let i =that.messageCount.length-1; i >=0 ; i--) {
             that.messageCount[i].id = i;
           }
           for (var i = 0; i < that.messageCount.length; i += 3) {
             that.messageOrder.push(that.messageCount.slice(i, i + 3));
           }
           that.messageNow = that.messageOrder[that.key];
+          window.console.log(that.messageNow)
         }
       }
       // 获取所有文章放到变量 messageCount 中， 将 messageCount 排序以3个为一组划分放到变量 messageOrder 中，将二维数组变量 messageOrder 的第一个值赋值给 messageNow
